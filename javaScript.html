@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css"> 
+	
+	</style>
+</head>
+<body>
+<div id="div1">
+    <input type="text" placeholder="Password" id="pass">
+    <button onclick="getPassword()" id="btn">Create</button>
+</div>
+<script>
+    function getPassword(){
+
+        var char="1234567890qwertyuiop";
+    var passLentgh=16;
+    var password="";
+    for(var i=0;i<passLentgh;i++ ){
+        var numberRandom=Math.floor(Math.random()*char.length);
+    password+=char.substring(numberRandom,numberRandom+1)
+    }
+    document.getElementById("pass").value=password
+    }
+  
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
